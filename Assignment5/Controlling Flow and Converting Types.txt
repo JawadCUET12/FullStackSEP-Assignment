@@ -1,0 +1,37 @@
+Controlling Flow and Converting Types 
+1.What happens when you divide an int variable by 0?
+It throws a DivideByZero Exception. It gets to compile time error.
+ 
+2.What happens when you divide a double variable by 0? 
+It doesn't throw an exception, it results in positive infinity, negative infinity or not a number.
+
+3.What happens when you overflow an int variable, that is, set it to a value beyond its range? 
+It depends on the execution context. In a checked context, an Overflow Exception is thrown.In unchecked 
+context, the most significant bits of the result are discarded and execution continues
+
+4.What is the difference between x = y++; and x = ++y;?
+x=y++ means the code will be read first when executing and do the x=y+1 after it has been read.
+x=++y means that it will first increase x=y+1 and then read the code.
+ 
+5.What is the difference between break, continue, and return when used inside a loop statement? 
+break terminates the closest enclosing iteration statement
+continue statement starts a new iteration of the closest enclosing iteration statement
+return execution of the loop in which it appears and returns control to the caller.
+
+6.What are the three parts of a for statement and which of them are required?
+initilizer section that is executed once
+the condition section that determines the next iteration in the loopshould be executed or not
+the iterator section that defines what happens after each execution of the body of the loop
+ 
+7.What is the difference between the = and == operators? 
+== is the comparison operator and is used to compare two variables or constants.
+= is an assignment operator and is used to assign a value to a variable
+
+8.Does the following statement compile? for ( ; true; ) ;
+No
+ 
+9.What does the underscore _ represent in a switch expression?
+Its a discard. Its a placeholder variable that we never intend to use.
+ 
+10.What interface must an object implement to be enumerated over by using the foreach statement?
+IEunemerable Interface
